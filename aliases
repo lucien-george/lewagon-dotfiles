@@ -5,3 +5,16 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+alias kitt="open -a 'Google Chrome' https://kitt.lewagon.com/"
+tickets() {
+  open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
+}
+calendar() {
+  open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/calendar
+}
+
+# Open slack
+alias slk="open -a 'slack'"
+
+alias work="open -a slack; open -a 'google chrome'; open -a mail;"
