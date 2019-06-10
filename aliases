@@ -27,4 +27,4 @@ website() {
 alias slk="open -a 'slack'"
 
 # Kick start day
-alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a mail;"
+alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a mail; stt;"
