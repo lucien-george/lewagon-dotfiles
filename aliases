@@ -7,14 +7,32 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 alias kitt="open -a 'Google Chrome' https://kitt.lewagon.com/"
+
+# Open tickets page
 tickets() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
 }
+
+# Open calendar page
 calendar() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/calendar
 }
 
-# Open slack
-alias slk="open -a 'slack'"
+# Open webpage on chrome
+website() {
+  open -a 'google chrome' https://www.$1
+}
 
-alias work="open -a slack; open -a 'google chrome'; open -a mail;"
+# Open slack
+alias slack="open -a 'slack'"
+
+# Kick start day
+alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a mail; stt;"
+
+# Open chrome
+alias chrome="open -a 'google chrome'"
+
+# Open an app
+app() {
+  open -a "$1"
+}
