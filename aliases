@@ -68,3 +68,18 @@ repo() {
 pr() {
   open -a 'google chrome' https://www.github.com/$1/$2/pulls
 }
+
+# Open issues of repo
+issues() {
+  open -a 'google chrome' https://www.github.com/$1/$2/issues
+}
+
+# Open driver dashboard
+dd() {
+  if [ $# -eq 1 ];
+    then
+      open -a 'google chrome' https://kitt.lewagon.com/cities/$1
+  else
+    open -a 'google chrome' https://kitt.lewagon.com/cities/london
+  fi
+}
