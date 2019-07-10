@@ -18,6 +18,11 @@ calendar() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/calendar
 }
 
+# Open classmates page
+classmates() {
+  open -a 'google chrome' https://kitt.lewagon.com/camps/$1/classmates
+}
+
 # Open dashboard page
 dashboard() {
   open -a "google chrome" https://kitt.lewagon.com/camps/$1/day_dashboard
