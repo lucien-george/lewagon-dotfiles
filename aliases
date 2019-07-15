@@ -83,3 +83,8 @@ dd() {
     open -a 'google chrome' https://kitt.lewagon.com/cities/london
   fi
 }
+
+# navigate in code folder
+goto() {
+  cd ~/code/$1
+}
