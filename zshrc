@@ -1,8 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
-
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Useful plugins for Rails development with Sublime Text
 plugins=(gitfast git last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
@@ -33,9 +32,13 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 
-# removes % sign on load
-unsetopt PROMPT_SP
+# # removes % sign on load
+# unsetopt PROMPT_SP
 
 # pure prompt
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
+# PROMPT='%(?.%F{white}.%F{red})❯%f '
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
