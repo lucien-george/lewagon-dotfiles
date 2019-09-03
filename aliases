@@ -93,6 +93,3 @@ goto() {
 sttt() {
   cd ~/code/$1; stt;
 }
-
-# open jupyter notebook
-alias jupyter="/anaconda3/bin/jupyter_mac.command ; exit;"
