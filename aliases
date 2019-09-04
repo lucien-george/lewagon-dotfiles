@@ -94,5 +94,4 @@ sttt() {
   cd ~/code/$1; stt;
 }
 
-# Jupyter alias
-alias jupyter=/Users/lucien/anaconda3/bin/jupyter
+alias jupyter="/anaconda3/bin/jupyter_mac.command"
