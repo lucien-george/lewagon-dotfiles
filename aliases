@@ -47,7 +47,7 @@ chrome() {
 alias slack="open -a 'slack'"
 
 # Kick start day
-alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a 'google chrome' https://dev.to; open -a 'google chrome' https://twitter.com; open -a mail; stt;"
+alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a 'google chrome' https://dev.to; open -a 'google chrome' https://twitter.com; open -a mail; open -a itunes; stt;"
 
 # Open an app
 app() {
