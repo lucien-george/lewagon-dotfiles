@@ -95,3 +95,5 @@ sttt() {
 }
 
 alias jupyter="/anaconda3/bin/jupyter_mac.command"
+
+alias ngrok="/Users/lucien/.ngrok2/ngrok"
