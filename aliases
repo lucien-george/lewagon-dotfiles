@@ -6,21 +6,21 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
-alias kitt="open -a 'Google Chrome' https://kitt.lewagon.com/"
+alias kitt="open https://kitt.lewagon.com/"
 
 # Open tickets page
 tickets() {
-  open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
+  open https://kitt.lewagon.com/camps/$1/tickets
 }
 
 # Open calendar page
 calendar() {
-  open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/calendar
+  open https://kitt.lewagon.com/camps/$1/calendar
 }
 
 # Open classmates page
 classmates() {
-  open -a 'google chrome' https://kitt.lewagon.com/camps/$1/classmates
+  open https://kitt.lewagon.com/camps/$1/classmates
 }
 
 # Open dashboard page
@@ -37,9 +37,9 @@ stats() {
 chrome() {
   if [ $# -eq 0 ];
     then
-      open -a 'google chrome'
+      open
   else
-    open -a 'google chrome' https://www.$1
+    open https://www.$1
   fi
 }
 
@@ -47,7 +47,7 @@ chrome() {
 alias slack="open -a 'slack'"
 
 # Kick start day
-alias work="open -a slack; open -a 'google chrome' http://localhost:3000; open -a 'google chrome' https://kitt.lewagon.com; open -a 'google chrome' https://calendar.google.com/calendar/b/1/r; open -a 'google chrome' https://github.com/lewagon/kitt; open -a 'google chrome' https://dev.to; open -a 'google chrome' https://twitter.com; open -a mail; open -a itunes; stt;"
+alias work="open -a slack; open http://localhost:3000; open https://kitt.lewagon.com; open https://calendar.google.com/calendar/b/1/r; open https://github.com/lewagon/kitt; open https://dev.to; open https://twitter.com; open -a mail; open -a itunes; stt;"
 
 # Open an app
 app() {
@@ -58,29 +58,29 @@ app() {
 repo() {
   if [ $# -eq 1 ];
     then
-      open -a 'google chrome' https://www.github.com/$1
+      open https://www.github.com/$1
   else
-    open -a 'google chrome' https://www.github.com/$1/$2
+    open https://www.github.com/$1/$2
   fi
 }
 
 # Open PRs of repo
 pr() {
-  open -a 'google chrome' https://www.github.com/$1/$2/pulls
+  open https://www.github.com/$1/$2/pulls
 }
 
 # Open issues of repo
 issues() {
-  open -a 'google chrome' https://www.github.com/$1/$2/issues
+  open https://www.github.com/$1/$2/issues
 }
 
 # Open driver dashboard
 dd() {
   if [ $# -eq 1 ];
     then
-      open -a 'google chrome' https://kitt.lewagon.com/cities/$1
+      open https://kitt.lewagon.com/cities/$1
   else
-    open -a 'google chrome' https://kitt.lewagon.com/cities/london
+    open https://kitt.lewagon.com/cities/london
   fi
 }
 
