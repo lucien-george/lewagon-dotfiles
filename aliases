@@ -94,9 +94,6 @@ sttt() {
   cd ~/code/$1; stt;
 }
 
-# start jupyter notebook
-alias jupyter="/anaconda3/bin/jupyter_mac.command"
-
 # start ngrok
 alias ngrok="/Users/lucien/.ngrok2/ngrok"
 
