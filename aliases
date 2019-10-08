@@ -47,7 +47,7 @@ chrome() {
 alias slack="open -a 'slack'"
 
 # Kick start day
-alias work="open -a slack; open http://localhost:3000; open https://kitt.lewagon.com; open https://calendar.google.com/calendar/b/1/r; open https://github.com/lewagon/kitt; open https://dev.to; open https://twitter.com; open -a spark; open -a itunes; stt;"
+alias work="open -a slack; open -a 'firefox developer edition'; open -a spark; open -a music; stt;"
 
 # Open an app
 app() {
@@ -98,7 +98,4 @@ sttt() {
 alias ngrok="/Users/lucien/.ngrok2/ngrok"
 
 # start mongodb
-
-mongodb() {
-  /Users/lucien/mongodb/bin/mongod --dbpath=/Users/lucien/$1
-}
+alias mongodb='/Users/lucien/mongodb/bin/mongod --dbpath=/Users/lucien/mongodb-data'
