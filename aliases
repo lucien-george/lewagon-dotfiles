@@ -99,3 +99,16 @@ alias ngrok="/Users/lucien/.ngrok2/ngrok"
 
 # start mongodb
 alias mongodb='/Users/lucien/mongodb/bin/mongod --dbpath=/Users/lucien/mongodb-data'
+
+# alias for a fresh dump of the kitt db
+dump() {
+  git status # Make sure it's clean
+  git checkout master && git pull origin master
+  bundle install && yarn install
+
+  rails db:import_from_aws
+  # This command will dumb the database, mount it locally, and destroy the dump.
+
+  git checkout $1
+  rails db:migrate
+}
