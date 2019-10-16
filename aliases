@@ -25,22 +25,17 @@ classmates() {
 
 # Open dashboard page
 dashboard() {
-  open -a "google chrome" https://kitt.lewagon.com/camps/$1/day_dashboard
+  open https://kitt.lewagon.com/camps/$1/day_dashboard
 }
 
 # Open statistics page
 stats() {
-  open -a "google chrome" https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
+  open https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
 }
 
-# Open webpage on chrome
-chrome() {
-  if [ $# -eq 0 ];
-    then
-      open
-  else
-    open https://www.$1
-  fi
+# Open webpage
+web() {
+  open https://www.$1
 }
 
 # Open slack
