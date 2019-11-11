@@ -15,14 +15,18 @@
 		"Color Highlight",
 		"Emmet",
 		"ERB Snippets",
+		"ESLint",
 		"Git",
 		"GitGutter",
+		"Latest Migration",
+		"MagicPython",
 		"Package Control",
 		"React ES6 Snippets",
 		"SCSS",
 		"SideBarEnhancements",
 		"SideBarMenuAdvanced",
 		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop"
 	]
 }
