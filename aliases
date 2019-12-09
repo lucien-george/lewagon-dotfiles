@@ -90,10 +90,10 @@ sttt() {
 }
 
 # start ngrok
-alias ngrok="/Users/lucien/.ngrok2/ngrok"
+alias ngrok="/Users/luciengeorge/.ngrok2/ngrok"
 
 # start mongodb
-alias mongodb='/Users/lucien/mongodb/bin/mongod --dbpath=/Users/lucien/mongodb-data'
+alias mongodb='/Users/luciengeorge/mongodb/bin/mongod --dbpath=/Users/luciengeorge/mongodb-data'
 
 # alias for a fresh dump of the kitt db
 dump() {
