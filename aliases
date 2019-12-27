@@ -42,7 +42,7 @@ web() {
 alias slack="open -a 'slack'"
 
 # Kick start day
-alias work="open -a slack; open -a 'firefox developer edition'; open -a spark; open -a music; stt;"
+alias work="open -a slack; open -a 'firefox developer edition'; open -a spark; open -a music; open -a dash; stt;"
 
 # Open an app
 app() {
