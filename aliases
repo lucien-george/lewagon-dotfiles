@@ -84,7 +84,7 @@ goto() {
   cd ~/code/$1
 }
 
-# navigate in code folder an open
+# navigate in folder and open
 sttt() {
   cd ~/code/$1; stt;
 }
