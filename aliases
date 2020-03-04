@@ -70,7 +70,7 @@ issues() {
 }
 
 # Open driver dashboard
-dd() {
+city() {
   if [ $# -eq 1 ];
     then
       open https://kitt.lewagon.com/cities/$1
@@ -119,3 +119,6 @@ alias rs="rails s"
 
 # rails db:migrate
 alias rdbm="rails db:migrate"
+
+# rake db:import_from_aws
+alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
