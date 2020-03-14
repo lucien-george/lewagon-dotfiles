@@ -132,5 +132,9 @@ alumni() {
   open https://kitt.lewagon.com/alumni/$1
 }
 
+products() {
+  open https://kitt.lewagon.com/camps/$1/products
+}
+
 # rake db:import_from_aws
 alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
