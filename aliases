@@ -120,5 +120,17 @@ alias rs="rails s"
 # rails db:migrate
 alias rdbm="rails db:migrate"
 
+# rails db:rollback
+alias rdbr="rails db:rollback"
+
+# search alumni
+search() {
+  open https://kitt.lewagon.com/alumni\?search=$1
+}
+
+alumni() {
+  open https://kitt.lewagon.com/alumni/$1
+}
+
 # rake db:import_from_aws
 alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
