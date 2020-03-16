@@ -10,27 +10,52 @@ alias kitt="open https://kitt.lewagon.com/"
 
 # Open tickets page
 tickets() {
-  open https://kitt.lewagon.com/camps/$1/tickets
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/tickets
+    else
+      open https://kitt.lewagon.com/camps/$1/tickets
+  fi
 }
 
 # Open calendar page
 calendar() {
-  open https://kitt.lewagon.com/camps/$1/calendar
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/calendar
+    else
+      open https://kitt.lewagon.com/camps/$1/calendar
+  fi
 }
 
 # Open classmates page
 classmates() {
-  open https://kitt.lewagon.com/camps/$1/classmates
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/classmates
+    else
+      open https://kitt.lewagon.com/camps/$1/classmates
+  fi
 }
 
 # Open dashboard page
 dashboard() {
-  open https://kitt.lewagon.com/camps/$1/day_dashboard
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/day_dashboard
+    else
+      open https://kitt.lewagon.com/camps/$1/day_dashboard
+  fi
 }
 
 # Open statistics page
 stats() {
-  open https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/tickets/day_dashboard
+    else
+      open https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
+  fi
 }
 
 # Open webpage
@@ -125,15 +150,32 @@ alias rdbr="rails db:rollback"
 
 # search alumni
 search() {
-  open https://kitt.lewagon.com/alumni\?search=$1
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/alumni\?search=$1
+    else
+      open https://kitt.lewagon.com/alumni\?search=$1
+  fi
 }
 
+# alumni show
 alumni() {
-  open https://kitt.lewagon.com/alumni/$1
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/alumni/$1
+    else
+      open https://kitt.lewagon.com/alumni/$1
+  fi
 }
 
+# products
 products() {
-  open https://kitt.lewagon.com/camps/$1/products
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/products
+    else
+      open https://kitt.lewagon.com/camps/$1/products
+  fi
 }
 
 # rake db:import_from_aws
