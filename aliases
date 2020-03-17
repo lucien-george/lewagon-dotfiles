@@ -58,6 +58,56 @@ stats() {
   fi
 }
 
+# search alumni
+search() {
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/alumni\?search=$1
+    else
+      open https://kitt.lewagon.com/alumni\?search=$1
+  fi
+}
+
+# alumni show
+alumni() {
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/alumni/$1
+    else
+      open https://kitt.lewagon.com/alumni/$1
+  fi
+}
+
+# products
+products() {
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/products
+    else
+      open https://kitt.lewagon.com/camps/$1/products
+  fi
+}
+
+# Open driver dashboard
+city() {
+  if [ $# -eq 1 ];
+    then
+      if [ "$1" = 'dev' ]
+        then
+          open http://localhost:3000/cities/london
+      else
+        open https://kitt.lewagon.com/cities/$1
+      fi
+  else
+    if [ "$2" = 'dev' ]
+      then
+        open https://localhost:3000/cities/$1
+    else
+      open https://kitt.lewagon.com/cities/london
+    fi
+  fi
+}
+
 # Open webpage
 web() {
   open https://www.$1
@@ -92,16 +142,6 @@ pr() {
 # Open issues of repo
 issues() {
   open https://www.github.com/$1/$2/issues
-}
-
-# Open driver dashboard
-city() {
-  if [ $# -eq 1 ];
-    then
-      open https://kitt.lewagon.com/cities/$1
-  else
-    open https://kitt.lewagon.com/cities/london
-  fi
 }
 
 # navigate in code folder
@@ -147,36 +187,6 @@ alias rdbm="rails db:migrate"
 
 # rails db:rollback
 alias rdbr="rails db:rollback"
-
-# search alumni
-search() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/alumni\?search=$1
-    else
-      open https://kitt.lewagon.com/alumni\?search=$1
-  fi
-}
-
-# alumni show
-alumni() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/alumni/$1
-    else
-      open https://kitt.lewagon.com/alumni/$1
-  fi
-}
-
-# products
-products() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/products
-    else
-      open https://kitt.lewagon.com/camps/$1/products
-  fi
-}
 
 # rake db:import_from_aws
 alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
