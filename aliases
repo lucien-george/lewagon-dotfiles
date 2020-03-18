@@ -78,6 +78,16 @@ alumni() {
   fi
 }
 
+# feedbacks index
+feedbacks() {
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1/feedbacks
+    else
+      open https://kitt.lewagon.com/camps/$1/feedbacks
+  fi
+}
+
 # products
 products() {
   if [ "$2" = 'dev' ]
