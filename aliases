@@ -111,7 +111,7 @@ city() {
   else
     if [ "$2" = 'dev' ]
       then
-        open https://localhost:3000/cities/$1
+        open http://localhost:3000/cities/$1
     else
       open https://kitt.lewagon.com/cities/london
     fi
