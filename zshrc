@@ -18,6 +18,7 @@ export PATH="${HOME}/.rbenv/bin:${PATH}"
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)
+export PATH="${HOME}/anaconda3/bin:${PATH}"
 export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
@@ -29,7 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 # So instead of running `bin/rails` like the doc says, just run `rails`
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
-export PATH="${HOME}/anaconda3/bin:${PATH}"
 
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
