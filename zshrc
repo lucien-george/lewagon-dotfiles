@@ -33,7 +33,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
+pyenv activate lewagon 2>/dev/null
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
