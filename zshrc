@@ -19,7 +19,7 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)
 export PATH="${HOME}/anaconda3/bin:${PATH}"
-export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
+# export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
 export NVM_DIR="$HOME/.nvm"
