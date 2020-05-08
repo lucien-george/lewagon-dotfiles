@@ -18,7 +18,7 @@ export PATH="${HOME}/.rbenv/bin:${PATH}"
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)
-export PATH="${HOME}/anaconda3/bin:${PATH}"
+# export PATH="${HOME}/anaconda3/bin:${PATH}"
 # export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
@@ -42,14 +42,6 @@ pyenv activate lewagon 2>/dev/null
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-
-# # removes % sign on load
-# unsetopt PROMPT_SP
-
-# pure prompt
-# autoload -U promptinit; promptinit
-# prompt pure
-# PROMPT='%(?.%F{white}.%F{red})❯%f '
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
