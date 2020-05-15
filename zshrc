@@ -29,7 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 # So instead of running `bin/rails` like the doc says, just run `rails`
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
-
+export PYTHONPATH="${HOME}/code/lucien-george/data-challenges/04-Decision-Science/olist:$PYTHONPATH"
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 pyenv activate lewagon 2>/dev/null
