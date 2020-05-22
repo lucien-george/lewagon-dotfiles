@@ -41,6 +41,7 @@ pyenv activate data 2>/dev/null
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
