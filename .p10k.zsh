@@ -34,7 +34,7 @@ fi
       dir                     # current directory
       vcs                     # git status
       # =========================[ Line #2 ]=========================
-      newline
+      # newline
       prompt_char             # prompt symbol
   )
 
@@ -48,21 +48,21 @@ fi
       command_execution_time  # duration of the last command
       background_jobs         # presence of background jobs
       virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
-      anaconda                # conda environment (https://conda.io/)
-      pyenv                   # python environment (https://github.com/pyenv/pyenv)
-      nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
+      # anaconda                # conda environment (https://conda.io/)
+      # pyenv                   # python environment (https://github.com/pyenv/pyenv)
+      # nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
       nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
       nodeenv                 # node.js environment (https://github.com/ekalinin/nodeenv)
       # node_version          # node.js version
       # go_version            # go version (https://golang.org)
       # rust_version          # rustc version (https://www.rust-lang.org)
       rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
-      rvm                     # ruby version from rvm (https://rvm.io)
+      # rvm                     # ruby version from rvm (https://rvm.io)
       kubecontext             # current kubernetes context (https://kubernetes.io/)
       context                 # user@host
       nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
       # =========================[ Line #2 ]=========================
-      newline
+      # newline
       # public_ip             # public IP address
       # battery               # internal battery
       # time                  # current time
@@ -139,7 +139,7 @@ fi
   typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=true
 
   # Add an empty line before each prompt.
-  typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+  # typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
   # Ruler, a.k.a. the horizontal line before each prompt. If you set it to true, you'll
   # probably want to set POWERLEVEL9K_PROMPT_ADD_NEWLINE=false above and
@@ -181,9 +181,9 @@ fi
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS}_FOREGROUND=196
   # Default prompt symbol OK.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_VIINS_CONTENT_EXPANSION='👉 '
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_VIINS_CONTENT_EXPANSION='❯ '
   # Default prompt symbol ERROR.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_VIINS_CONTENT_EXPANSION='👎 '
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_VIINS_CONTENT_EXPANSION='❯ '
   # Prompt symbol in command vi mode.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='❮'
   # Prompt symbol in visual vi mode.
