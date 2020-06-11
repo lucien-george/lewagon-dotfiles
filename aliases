@@ -213,8 +213,5 @@ alias rdbc="rails db:create"
 # rails db:drop db:create db:migrate db:seed
 alias rdb="rails db:drop db:create db:migrate db:seed"
 
-# colorls
-alias cls="colorls"
-
 # rake db:import_from_aws
 alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"

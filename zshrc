@@ -45,4 +45,3 @@ export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-source $(dirname $(gem which colorls))/tab_complete.sh
