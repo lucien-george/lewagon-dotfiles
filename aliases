@@ -215,3 +215,6 @@ alias rdb="rails db:drop db:create db:migrate db:seed"
 
 # rake db:import_from_aws
 alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
+
+# docker compose
+alias dc="docker-compose"
