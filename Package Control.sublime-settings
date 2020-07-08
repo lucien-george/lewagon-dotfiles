@@ -28,6 +28,7 @@
 		"SideBarMenuAdvanced",
 		"SublimeLinter",
 		"SublimeLinter-eslint",
-		"SublimeLinter-rubocop"
+		"SublimeLinter-rubocop",
+		"TabNine"
 	]
 }
