@@ -170,8 +170,11 @@ alias ngrok="/Users/luciengeorge/.ngrok2/ngrok"
 # start mongodb
 alias mongodb='/Users/luciengeorge/mongodb/bin/mongod --dbpath=/Users/luciengeorge/mongodb-data'
 
-# start webpack-dev-server
+# launch webpack-dev-server
 alias wds='webpack-dev-server'
+
+# used nvmrc version and launch webpack-dev-server
+alias nwds='nvm use && webpack-dev-server'
 
 # alias for a fresh dump of the kitt db
 dump() {
@@ -218,3 +221,4 @@ alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
 
 # jupyter notebook
 alias jn="jupyter notebook"
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/luciengeorge/lewagon-data-bootcamp-424-756a457168fe.json
