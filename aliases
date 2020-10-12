@@ -221,4 +221,9 @@ alias aws="rake db:import_from_aws && rake s3:sync_prod_bucket_to_dev_bucket"
 
 # jupyter notebook
 alias jn="jupyter notebook"
+
+jslides() {
+  jupyter nbconvert --to slides --post serve $1
+}
+
 export GOOGLE_APPLICATION_CREDENTIALS=/Users/luciengeorge/lewagon-data-bootcamp-424-756a457168fe.json
