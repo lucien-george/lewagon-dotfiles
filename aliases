@@ -178,6 +178,7 @@ alias nwds='nvm use && webpack-dev-server'
 
 # alias for a fresh dump of the kitt db
 dump() {
+  nvm use
   git status # Make sure it's clean
   git checkout master && git pull origin master
   bundle install && yarn install
@@ -226,4 +227,4 @@ jslides() {
   jupyter nbconvert --to slides --post serve $1
 }
 
-export GOOGLE_APPLICATION_CREDENTIALS=/Users/luciengeorge/lewagon-data-bootcamp-424-756a457168fe.json
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/luciengeorge/lewagon-data-lectures-42a7b6efd629.json
