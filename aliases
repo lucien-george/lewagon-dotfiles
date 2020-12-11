@@ -164,11 +164,8 @@ sttt() {
   cd ~/code/$1; stt;
 }
 
-# start ngrok
-alias ngrok="/Users/luciengeorge/.ngrok2/ngrok"
-
 # start mongodb
-alias mongodb='/Users/luciengeorge/mongodb/bin/mongod --dbpath=/Users/luciengeorge/mongodb-data'
+alias mongodb='$HOME/mongodb/bin/mongod --dbpath=$HOME/mongodb-data'
 
 # launch webpack-dev-server
 alias wds='webpack-dev-server'
@@ -227,4 +224,4 @@ jslides() {
   jupyter nbconvert --to slides --post serve $1
 }
 
-export GOOGLE_APPLICATION_CREDENTIALS=/Users/luciengeorge/lewagon-data-lectures-42a7b6efd629.json
+export GOOGLE_APPLICATION_CREDENTIALS=$HOME/lewagon-data-lectures-42a7b6efd629.json

@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(gitfast git last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(gitfast git last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -32,7 +32,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export PYTHONPATH="${HOME}/code/lucien-george/data-challenges/04-Decision-Science:$PYTHONPATH"
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-pyenv activate data 2>/dev/null
+pyenv activate lewagon 2>/dev/null
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -42,8 +42,10 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+PYTHON_CONFIGURE_OPTS=--enable-unicode=ucs2 \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"

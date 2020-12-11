@@ -24,6 +24,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"remember_open_files": false,
