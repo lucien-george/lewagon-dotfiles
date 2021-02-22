@@ -56,3 +56,6 @@
 	smudge = git-lfs smudge -- %f
 [pull]
 	rebase = false
+[init]
+	defaultBranc = main
+	defaultBranch = main
