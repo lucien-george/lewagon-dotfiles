@@ -11,7 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+  editor = '/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w
+	# editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
 
 [alias]
   co = checkout
