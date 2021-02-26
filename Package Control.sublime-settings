@@ -30,6 +30,8 @@
 		"SideBarMenuAdvanced",
 		"SublimeLinter",
 		"SublimeLinter-eslint",
-		"SublimeLinter-rubocop"
+		"SublimeLinter-rubocop",
+		"Theme - Brogrammer",
+		"Theme - Darkmatter"
 	]
 }
