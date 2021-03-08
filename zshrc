@@ -44,6 +44,7 @@ export LC_ALL=en_US.UTF-8
 # export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
 export BUNDLER_EDITOR="'/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w"
 # export EDITOR="'/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w"
+export EDITOR="vim"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
