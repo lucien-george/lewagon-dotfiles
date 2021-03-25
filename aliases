@@ -127,7 +127,7 @@ web() {
 alias slack="open -a 'slack'"
 
 # Kick start day
-alias dev="open -a slack; open -a spark; open -a 'firefox developer edition'; open -a music; open -a notion; stt;"
+alias dev="open -a slack; open -a spark; open -a 'firefox developer edition'; open -a music; open -a notion; code .;"
 
 # Open an app
 app() {
@@ -222,7 +222,7 @@ alias jn="jupyter notebook"
 
 jslides() {
   # jupyter nbconvert --to slides --post serve $1
-  ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve;
+  ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve --TemplateExporter.extra_template_basedirs=../templates --template=kitt;
 }
 
 export GOOGLE_APPLICATION_CREDENTIALS=$HOME/lewagon-data-lectures-42a7b6efd629.json
