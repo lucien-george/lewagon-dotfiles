@@ -225,4 +225,5 @@ jslides() {
   ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve --TemplateExporter.extra_template_basedirs=../templates --template=kitt;
 }
 
-export GOOGLE_APPLICATION_CREDENTIALS=$HOME/lewagon-data-lectures-42a7b6efd629.json
+# Sublime Text 4
+alias s44='/Applications/Sublime\ Text\ 4.app/Contents/SharedSupport/bin/subl .'
