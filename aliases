@@ -18,6 +18,15 @@ tickets() {
   fi
 }
 
+camp() {
+  if [ "$2" = 'dev' ]
+    then
+      open http://localhost:3000/camps/$1
+    else
+      open https://kitt.lewagon.com/camps/$1
+  fi
+}
+
 # Open calendar page
 calendar() {
   if [ "$2" = 'dev' ]
