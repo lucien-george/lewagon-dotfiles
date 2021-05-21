@@ -28,7 +28,7 @@
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage",
+		"Vintage"
 	],
 	"remember_open_files": false,
 	"rulers": false,
@@ -39,5 +39,5 @@
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
 	"use_tab_stops": true,
-	"wordWrap": true,
+	"wordWrap": true
 }
