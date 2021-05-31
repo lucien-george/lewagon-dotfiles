@@ -9,7 +9,6 @@
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"ayu",
-		"Babel",
 		"BracketHighlighter",
 		"Color Highlight",
 		"Emmet",
@@ -32,6 +31,6 @@
 		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop",
 		"Theme - Brogrammer",
-		"Theme - Darkmatter"
-	]
+		"Theme - Darkmatter",
+	],
 }
