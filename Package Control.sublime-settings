@@ -30,6 +30,8 @@
 		"SublimeLinter",
 		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop",
+		"Tailwind CSS Autocomplete",
+		"Tailwind CSS Docs",
 		"Theme - Brogrammer",
 		"Theme - Darkmatter",
 	],
