@@ -68,7 +68,7 @@ stats() {
 }
 
 # search alumni
-kittsearch() {
+search() {
   if [ "$2" = 'dev' ]
     then
       open http://localhost:3000/alumni\?search=$1
