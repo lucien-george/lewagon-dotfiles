@@ -187,13 +187,8 @@ dump() {
   nvm use
   git status # Make sure it's clean
   git checkout master && git pull origin master
-  bundle install && yarn install
-
-  rails db:import_from_aws
-  # This command will dumb the database, mount it locally, and destroy the dump.
-
-  git checkout master
-  rails db:migrate
+  bin/setup
+  bin/restore_light_dump
 }
 
 # rails console

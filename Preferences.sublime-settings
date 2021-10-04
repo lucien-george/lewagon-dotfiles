@@ -21,7 +21,6 @@
 		"public/packs",
 		"coverage"
 	],
-	"font_size": 12,
 	"gpu_window_buffer": false,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -40,4 +39,5 @@
 	"update_check": false,
 	"use_tab_stops": true,
 	"wordWrap": true,
+	"font_size": 12,
 }
