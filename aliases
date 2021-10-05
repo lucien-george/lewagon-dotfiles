@@ -191,6 +191,11 @@ dump() {
   bin/restore_light_dump
 }
 
+bs() {
+  nvm use
+  bin/start
+}
+
 # rails console
 alias rc="rails c"
 
