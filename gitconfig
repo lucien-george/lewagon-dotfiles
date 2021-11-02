@@ -60,5 +60,4 @@
 [pull]
 	rebase = false
 [init]
-	defaultBranc = master
-	defaultBranch = master
+	defaultBranch = main
