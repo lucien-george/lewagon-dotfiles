@@ -40,6 +40,16 @@ if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting
 fi
+
+cd "$CURRENT_DIR"
+
+ZSH_THEMES_DIR="$HOME/.oh-my-zsh/custom/themes"
+mkdir -p "$ZSH_THEMES_DIR" && cd "$ZSH_THEMES_DIR"
+if [ ! -d "$ZSH_THEMES_DIR/powerlevel10k" ]; then
+  echo "-----> Installing powerlevel10k..."
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
+fi
+
 cd "$CURRENT_DIR"
 
 # Symlink VS Code settings and keybindings to the present `settings.json` and `keybindings.json` files
