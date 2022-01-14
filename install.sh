@@ -1,4 +1,4 @@
-# #!/bin/zsh
+#!/bin/zsh
 
 # # Define a function which rename a `target` file to `target.backup` if the file
 # # exists and if it's a 'real' file, ie not a symlink
@@ -84,10 +84,10 @@
 
 # echo "👌 Carry on with git setup!"
 
-#!/bin/sh
-
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-cp ~/dotfiles/.dircolors ~/.dircolors
+# cp ~/dotfiles/.dircolors ~/.dircolors
 cp ~/dotfiles/zshrc ~/.zshrc
-cp ~/dotfiles/zsh_themes/robbyrussell_with_host.zsh-theme ~/.oh-my-zsh/custom/themes/robbyrussell_with_host.zsh-theme
+# cp ~/dotfiles/zsh_themes/robbyrussell_with_host.zsh-theme ~/.oh-my-zsh/custom/themes/robbyrussell_with_host.zsh-theme
+cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
