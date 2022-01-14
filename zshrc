@@ -37,8 +37,8 @@
 # # export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # # pyenv activate lewagon 2>/dev/null
 
-# # Store your own aliases in the ~/.aliases file and load the here.
-# [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+# Store your own aliases in the ~/.aliases file and load the here.
+[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # # Encoding stuff for the terminal
 # # export LANG=en_US.UTF-8
@@ -131,8 +131,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(gitfast git last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
-
+unalias rm
 source $ZSH/oh-my-zsh.sh
+
+# Store your own aliases in the ~/.aliases file and load the here.
+[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # User configuration
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
