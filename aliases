@@ -181,20 +181,6 @@ alias wds='webpack-dev-server'
 # used nvmrc version and launch webpack-dev-server
 alias nwds='nvm use && webpack-dev-server'
 
-# alias for a fresh dump of the kitt db
-dump() {
-  nvm use
-  git status # Make sure it's clean
-  git checkout master && git pull origin master
-  bin/setup
-  bin/restore_light_dump
-}
-
-bs() {
-  nvm use
-  bin/start
-}
-
 # rails console
 alias rc="rails c"
 

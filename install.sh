@@ -31,15 +31,6 @@
 #   fi
 # done
 
-# ZSH_THEMES_DIR="$HOME/.oh-my-zsh/custom/themes"
-# mkdir -p "$ZSH_THEMES_DIR" && cd "$ZSH_THEMES_DIR"
-# if [ ! -d "$ZSH_THEMES_DIR/powerlevel10k" ]; then
-#   echo "-----> Installing powerlevel10k..."
-#   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
-# fi
-
-# cd "$CURRENT_DIR"
-
 # # Symlink VS Code settings and keybindings to the present `settings.json` and `keybindings.json` files
 # # If it's a macOS
 # if [[ `uname` =~ "Darwin" ]]; then
@@ -88,3 +79,4 @@ cd "$CURRENT_DIR"
 
 cp ~/dotfiles/zshrc ~/.zshrc
 cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
+cp ~/dotfiles/aliases ~/.aliases
