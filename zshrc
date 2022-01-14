@@ -6,15 +6,18 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Useful plugins for Rails development with Sublime Text
 plugins=(gitfast git last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
 
-# Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
+# (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
+
+# Disable warning about insecure completion-dependent directories
+ZSH_DISABLE_COMPFIX=true
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
-# Load rbenv if installed
-export PATH="${HOME}/.rbenv/bin:${PATH}"
+# Load rbenv if installed (to manage your Ruby versions)
+export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)

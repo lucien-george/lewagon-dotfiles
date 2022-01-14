@@ -1,9 +1,4 @@
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
-fi
-
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# Setup the PATH for pyenv binaries and shims
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+type -a pyenv > /dev/null && eval "$(pyenv init --path)"
