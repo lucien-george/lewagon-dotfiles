@@ -1,4 +1,5 @@
 #!/bin/zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Define a function which rename a `target` file to `target.backup` if the file
 # exists and if it's a 'real' file, ie not a symlink
