@@ -85,5 +85,11 @@
     "gitlens.advanced.messages": {
       "suppressGitDisabledWarning": true
     },
-    "bracket-pair-colorizer-2.depreciation-notice": false
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": true,
+      "plaintext": false,
+      "markdown": false
+    }
 }
