@@ -8,7 +8,6 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.detectIndentation": false,
     "editor.guides.bracketPairs": true,
-    "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderControlCharacters": true,
     "editor.rulers":
@@ -89,7 +88,9 @@
     "github.copilot.enable": {
       "*": true,
       "yaml": true,
-      "plaintext": false,
+      "plaintext": true,
       "markdown": false
-    }
+    },
+    "search.mode": "reuseEditor",
+    "editor.minimap.enabled": false
 }
