@@ -21,7 +21,7 @@ export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)
-# export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
+export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
 export NVM_DIR="$HOME/.nvm"
@@ -32,7 +32,6 @@ export NVM_DIR="$HOME/.nvm"
 # So instead of running `bin/rails` like the doc says, just run `rails`
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
-export PYTHONPATH="${HOME}/code/lucien-george/data-challenges/04-Decision-Science:$PYTHONPATH"
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 pyenv activate lewagon 2>/dev/null
@@ -41,17 +40,15 @@ pyenv activate lewagon 2>/dev/null
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Encoding stuff for the terminal
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-# export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-# export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
-export BUNDLER_EDITOR="'/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w"
-# export EDITOR="'/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w"
+# export LANG=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
+export BUNDLER_EDITOR=code
 export EDITOR="vim"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
-PYTHON_CONFIGURE_OPTS=--enable-unicode=ucs2 \
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+# export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+# PYTHON_CONFIGURE_OPTS=--enable-unicode=ucs2 \
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
