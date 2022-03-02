@@ -9,121 +9,51 @@ alias kitt="open https://kitt.lewagon.com/"
 
 # Open tickets page
 tickets() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/tickets
-    else
-      open https://kitt.lewagon.com/camps/$1/tickets
-  fi
+  open https://kitt.lewagon.com/camps/$1/tickets
 }
 
 camp() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1
-    else
-      open https://kitt.lewagon.com/camps/$1
-  fi
+  open https://kitt.lewagon.com/camps/$1
 }
 
 # Open calendar page
 calendar() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/calendar
-    else
-      open https://kitt.lewagon.com/camps/$1/calendar
-  fi
+  open https://kitt.lewagon.com/camps/$1/calendar
 }
 
 # Open classmates page
 classmates() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/classmates
-    else
-      open https://kitt.lewagon.com/camps/$1/classmates
-  fi
+  open https://kitt.lewagon.com/camps/$1/classmates
 }
 
 # Open dashboard page
 dashboard() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/day_dashboard
-    else
-      open https://kitt.lewagon.com/camps/$1/day_dashboard
-  fi
+  open https://kitt.lewagon.com/camps/$1/day_dashboard
 }
 
 # Open statistics page
 stats() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/tickets/day_dashboard
-    else
-      open https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
-  fi
+  open https://kitt.lewagon.com/camps/$1/tickets/day_dashboard
 }
 
-# search alumni
-search() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/alumni\?search=$1
-    else
-      open https://kitt.lewagon.com/alumni\?search=$1
-  fi
+# search alumni on kitt
+kittsearch() {
+  open https://kitt.lewagon.com/alumni\?search=$1
 }
 
 # alumni show
 alumni() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/alumni/$1
-    else
-      open https://kitt.lewagon.com/alumni/$1
-  fi
+  open https://kitt.lewagon.com/alumni/$1
 }
 
 # feedbacks index
 feedbacks() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/feedbacks
-    else
-      open https://kitt.lewagon.com/camps/$1/feedbacks
-  fi
+  open https://kitt.lewagon.com/camps/$1/feedbacks
 }
 
 # products
 products() {
-  if [ "$2" = 'dev' ]
-    then
-      open http://localhost:3000/camps/$1/products
-    else
-      open https://kitt.lewagon.com/camps/$1/products
-  fi
-}
-
-# Open driver dashboard
-city() {
-  if [ $# -eq 1 ];
-    then
-      if [ "$1" = 'dev' ]
-        then
-          open http://localhost:3000/cities/london
-      else
-        open https://kitt.lewagon.com/cities/$1
-      fi
-  else
-    if [ "$2" = 'dev' ]
-      then
-        open http://localhost:3000/cities/$1
-    else
-      open https://kitt.lewagon.com/cities/london
-    fi
-  fi
+  open https://kitt.lewagon.com/camps/$1/products
 }
 
 # Open webpage
@@ -133,9 +63,6 @@ web() {
 
 # Open slack
 alias slack="open -a 'slack'"
-
-# Kick start day
-alias dev="open -a slack; open -a spark; open -a 'firefox developer edition'; open -a music; open -a notion; code .;"
 
 # Open an app
 app() {
@@ -164,12 +91,12 @@ issues() {
 
 # navigate in code folder
 goto() {
-  cd ~/code/$1
+  cd ~/src/$1
 }
 
 # navigate in folder and open
 sttt() {
-  cd ~/code/$1; stt;
+  cd ~/src/$1; stt;
 }
 
 # start mongodb
@@ -180,20 +107,6 @@ alias wds='webpack-dev-server'
 
 # used nvmrc version and launch webpack-dev-server
 alias nwds='nvm use && webpack-dev-server'
-
-# alias for a fresh dump of the kitt db
-dump() {
-  nvm use
-  git status # Make sure it's clean
-  git checkout master && git pull origin master
-  bin/setup
-  bin/restore_light_dump
-}
-
-bs() {
-  nvm use
-  bin/start
-}
 
 # rails console
 alias rc="rails c"
